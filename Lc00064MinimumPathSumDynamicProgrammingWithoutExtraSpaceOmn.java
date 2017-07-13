@@ -1,4 +1,4 @@
-public class Lc00064MinimumPathSumDynamicProgrammingWithoutExtraSpace {
+public class Lc00064MinimumPathSumDynamicProgrammingWithoutExtraSpaceOmn {
 
     public static void main(String[] args) {
       int[][] grid = {
