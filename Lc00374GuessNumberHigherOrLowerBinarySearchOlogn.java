@@ -1,4 +1,4 @@
-public class Lc00374GuessNumberHigherOrLowerBinarySearchLogn {
+public class Lc00374GuessNumberHigherOrLowerBinarySearchOlogn {
 
     public static void main(String[] args) {
     
