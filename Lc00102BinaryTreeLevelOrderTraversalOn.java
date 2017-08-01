@@ -12,12 +12,16 @@ import java.util.List;
  * }
  */
 public class Lc00102BinaryTreeLevelOrderTraversalOn {
-    
     public static void main (String[] args) {
-        
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        System.out.println(levelOrder(root));
     }
     
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public static List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> nodeValues = new ArrayList<>();
         List<Integer> levelNodeValues = new ArrayList<>();
         
@@ -25,8 +29,8 @@ public class Lc00102BinaryTreeLevelOrderTraversalOn {
             return nodeValues;
         }
         
-        List<TreeNode> currentLevel = new ArrayList<>();
-        List<TreeNode> nextLevel = new ArrayList<>();
+        List<TreeNode> currentLevel = new LinkedList<>();
+        List<TreeNode> nextLevel = new LinkedList<>();
         currentLevel.add(root);
         
         while (!currentLevel.isEmpty()) {
@@ -46,5 +50,14 @@ public class Lc00102BinaryTreeLevelOrderTraversalOn {
             }
         }
         return nodeValues;
+    }
+
+    public static class TreeNode {
+        private int val;
+        private TreeNode left;
+        private TreeNode right;
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }
