@@ -48,25 +48,25 @@ public class Lc00333LargestBstSubtreeOn {
     }
 
     public static class Subtree {
-        int size;
-        int lower;
-        int upper;
-        boolean isBst;
+        private int size;
+        private int lower;
+        private int upper;
+        private boolean isBst;
 
         public Subtree() {
-            lower = Integer.MAX_VALUE;
-            upper = Integer.MIN_VALUE;
-            isBst = false;
-            size = 0;
+            this.lower = Integer.MAX_VALUE;
+            this.upper = Integer.MIN_VALUE;
+            this.isBst = false;
+            this.size = 0;
         }
     }
 
     public static class TreeNode {  
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
-            val = x;
+        private int val;
+        private TreeNode left;
+        private TreeNode right;
+        private TreeNode(int x) {
+            this.val = x;
         }
     } 
 }
