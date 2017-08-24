@@ -3,8 +3,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class Lc00296BestMeetingPoint {
-    private static int dx[] = {0, 0, -1, 1};
-    private static int dy[] = {1, -1, 0, 0};
   
     public static void main(String[] args) {
         int[][] grid = new int[][] {
