@@ -1,9 +1,7 @@
 import java.util.PriorityQueue;
 
 public class Lc00411MinimumUniqueWordAbbreviation {
-    private static int dx[] = {0, 0, -1, 1};
-    private static int dy[] = {1, -1, 0, 0};
-  
+
     public static void main(String[] args) {
         System.out.println(minAbbreviation("apple", new String[]{"blade"}));
         System.out.println(minAbbreviation("apple", new String[]{"plain", "amber", "blade"}));
