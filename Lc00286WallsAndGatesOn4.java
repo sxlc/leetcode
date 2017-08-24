@@ -3,9 +3,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class Lc00286WallsAndGatesOn4 {
-    private static int dx[] = {0, 0, -1, 1};
-    private static int dy[] = {1, -1, 0, 0};
-  
+
     public static void main(String[] args) {
         int[][] grid = new int[][] {
                 {Integer.MAX_VALUE, -1, 0, Integer.MAX_VALUE},
